@@ -63,11 +63,10 @@ html {
 }
 
 .reach {
-    background-color: lightgray;
-    width: 50%;
+    background-color: lavender;
+    width: auto;
     /* this centers the blocks into the middle of the component */
     margin: auto;
-    margin-bottom: 75px;
 }
 
 .info {
@@ -80,8 +79,6 @@ html {
 }
 
 .copyright{
-    
-    margin-top: 120px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -89,10 +86,30 @@ html {
     padding: 20px 0;
     background-color: rgba(0,0,0,.1);
     color: gray;
-
 }
 
 .cp {
     height: 12px;
     width: 12px;
+}
+
+.section-2 {
+    display: block;
+    background-color: #fff;
+    /* top and bottom || left and right */
+    padding:122px 0;
+}
+
+.section-3 {
+    display: block;
+    background-color: #f7f7f7;
+    /* top and bottom || left and right */
+    padding:122px 0;
+}
+
+.section-4{
+    display: block;
+    background-color: gray;
+    /* top and bottom || left and right */
+    padding:122px 0;
 }
