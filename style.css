@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* either set to Rubik or sans-serif is not available */
+    font-family: 'Rubik', sans-serif;
+    color: #444;
+}
+
+.top-nav {
+    /* font color */
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+
+    /* this is to put a space in between the two nav objects */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #444;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.roles {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: lightgrey;
+    margin-bottom: 5px;
+    border-radius: 50px;
+}
+
+.role {
+    padding: 22px;
+}
+
+.email {
+    display: flex;
+    justify-content: center;
+}
+
+.section-1 {
+    display: block;
+    background-color: #f7f7f7;
+    /* top and bottom || left and right */
+    padding:122px 0;
+
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.reach {
+    background-color: lightgray;
+    width: 50%;
+    /* this centers the blocks into the middle of the component */
+    margin: auto;
+    margin-bottom: 75px;
+}
+
+.info {
+    border-radius: 50px;
+
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 22px; 
+}
+
+.copyright{
+    
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: rgba(0,0,0,.1);
+    color: gray;
+
+}
+
+.cp {
+    height: 12px;
+    width: 12px;
+}
