@@ -8,19 +8,21 @@ html {
     /* either set to Rubik or sans-serif is not available */
     font-family: 'Rubik', sans-serif;
     color: #444;
+    font-size: 10px;
 }
 
 .top-nav {
     /* font color */
     color: #fff;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
+    padding-top: 2rem;
 
     /* this is to put a space in between the two nav objects */
     display: flex;
     justify-content: center;
-    gap: 30px;
-    background-color: #444;
+    gap: 3rem;
+    background-color: #f7f7f7;
 }
 
 header {
@@ -33,31 +35,52 @@ img {
 
 
 /* rewrite this with flex box */
-ul {
-    padding: 0;
+.projects { 
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
     list-style-type: none;
-    columns: 4;
+
 }
+
+.project-tile {
+    box-shadow: 0 20px 30px 0 rgb(0 0 0 / 5%);
+    border-radius: 2rem;
+    padding: 3rem;
+    color: #444;
+    background-color: #fff;
+}
+
+/* doesn't look as good as I wanted */
+/* .background-tile {
+    padding: 1rem;
+    background-color: #444;
+    border-radius: 2rem;
+} */
 
 .name {
     display: flex;
     justify-content: center;
+    font-size: 4rem;
     margin-bottom: 30px;
 }
 
 .roles {
-    width: 75%;
+    width: 30%;
     margin: auto;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 3rem;
     background-color: lightgrey;
-    margin-bottom: 5px;
-    border-radius: 50px;
+    margin-bottom: .5rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
 }
 
 .role {
-    padding: 22px;
+    padding: 2rem;
 }
 
 .email {
@@ -70,24 +93,27 @@ ul {
     background-color: #f7f7f7;
     /* top and bottom || left and right */
     padding:122px 0;
+    height: 100vh;
 
 }
 
 .container {
-    width: 960px;
+    /* the width will stay this width if the viewport is larger than it, otherwise it will shrink in size. */
+    max-width: 1300px;
+    /* this centers the container */
     margin: 0 auto;
 }
 
+/* the button that lead to other pages for personal resource */
 .reach {
     background-color: lavender;
     width: auto;
     /* this centers the blocks into the middle of the component */
-    margin: auto;
 }
 
 .info {
     border-radius: 50px;
-
+    font-size: 2rem;
     display:flex;
     justify-content: center;
     gap: 50px;
@@ -110,17 +136,67 @@ ul {
 }
 
 .section-2 {
-    display: block;
-    background-color: #fff;
+    /* height: 40vh; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8rem;
+    background-color: antiquewhite;
     /* top and bottom || left and right */
-    padding:122px 0;
+    /* margin is OUTSIDE of the component */
+
 }
+
+
+
+.about-me-item {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+/* keep image only in the last grid section */
+.img {
+    width: 60%;
+    height: auto;
+    grid-column: 2 / -1;
+    padding-right: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-me-li {
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    gap: 0rem;
+    font-size: 2rem;
+
+}
+
+.icon {
+    stroke: #087f5b;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 24px;
+}
+
+.about-me {
+    align-self: center;
+
+    grid-column: 1 / 1;
+    padding-left: 10rem;
+    font-size: 3rem;
+}
+
+
 
 .section-3 {
     display: block;
     background-color: #f7f7f7;
     /* top and bottom || left and right */
     padding:122px 0;
+    height: 100vh;
+
 }
 
 .section-4{
@@ -128,3 +204,27 @@ ul {
     background-color: gray;
     /* top and bottom || left and right */
     padding:122px 0;
+}
+
+.panel-2 {
+    height: 100vh;
+    background-color: #e7f5ff;
+
+}
+
+.nav-btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #495057;
+}
+
+.btn:hover,
+.btn:active {
+    color: #fff;
+}
