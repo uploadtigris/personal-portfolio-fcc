@@ -23,6 +23,22 @@ html {
     background-color: #444;
 }
 
+header {
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* rewrite this with flex box */
+ul {
+    padding: 0;
+    list-style-type: none;
+    columns: 4;
+}
+
 .name {
     display: flex;
     justify-content: center;
@@ -112,4 +128,3 @@ html {
     background-color: gray;
     /* top and bottom || left and right */
     padding:122px 0;
-}
